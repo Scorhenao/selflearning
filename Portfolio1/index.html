@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SCH</title>
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="../Portfolio1/css/style.css">
+    <link rel="stylesheet" href="../Portfolio1/css/slider.css">
+    
+    <!-- Biblioteca de slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
     <!-- Background of the pag -->
@@ -137,9 +143,29 @@
         </div>
         <!--parte izquierda abajo-->
         <div class="Projects">
-
+            <!-- slider -->
+            <div class="swiper mySwiper-1"> <!--definimos que vamos a usar el framework-->
+                <div class="swiper-wrapper"> <!--posicion de los elementos ocn el framework-->
+                    <div class="swiper-slide"> <!--espacio entre img-->
+                        <img class="img-inside-slide" src="https://freepngimg.com/thumb/categories/1483.png" alt="">
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <img class="img-inside-slide" src="https://freepngimg.com/thumb/categories/1483.png" alt="">
+                    </div>
+        
+                    <div class="swiper-slide">
+                        <img class="img-inside-slide" src="https://freepngimg.com/thumb/categories/1483.png" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </section>
-
+        <!-- Linkeo de javascript code -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+        <script src="../Portfolio1/vscode/script.js"></script>
 </body>
 </html>
